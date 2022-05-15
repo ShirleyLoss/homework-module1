@@ -137,6 +137,42 @@ footer #nondisclaimer .social .fa-instagram{
     background: no-repeat lightgrey url(images/runfly.jpeg);
     background-size: 1500px;
 }
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto;
+}
+caption {
+    background-color: #852B1B;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+}
+thead {
+    background-color: #BDE1FF;
+    text-align: center;
+}
+tbody {
+    background-color: #EEFFE6;
+    text-align: center;
+}
+thead, td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852B1B;
+}
+thead tr td:first-child {
+    width: 125px;
+    height: 50px;
+    background-color: #4977D1;
+    color: #fff;
+}
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
+}
 
 /* Contact Page */
 #contact header {
