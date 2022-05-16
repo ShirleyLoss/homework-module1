@@ -179,3 +179,57 @@ td:first-child {
     background: no-repeat lightgrey url(images/cliff_rock.jpeg);
     background-size: 1500px;
 }
+fieldset {
+    border: 1px solid #9ed034;
+    padding-top: 20px;
+}
+legend {
+    color: #4977D1;
+    font-weight: bold;
+}
+#contact #container h1 {
+    color: #9ed034;
+}
+.phone, .email {
+    margin: 10px auto;
+}
+.phone span:first-child {
+    font-weight: bold;
+}
+.email span:first-child {
+    font-weight: bold;
+}
+.textbox label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.textbox input{
+    display: block;
+    margin-top: 10px;
+    width: 1000px;
+}
+.radios {
+    margin: 10px auto;
+}
+.selectmenu {
+    margin: 10px auto;
+}
+.selectmenu select {
+    width: 150px;
+    text-align: center;
+}
+.commentbox label {
+    display: block;
+}
+.commentbox textarea {
+    width: 1000px;
+    height: 150px;
+}
+.button input{
+    width: 100px;
+    height: 30px;
+    background-color: #4977D1;
+    color: #fff;
+    margin-left: 900px;
+}
