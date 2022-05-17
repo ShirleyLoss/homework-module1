@@ -267,3 +267,34 @@ legend {
     font-weight: bold;
 }
 
+/* Cliffs Area */
+#cliffs {
+    margin: 40px;
+}
+#cliffs header {
+    background: no-repeat lightgrey url(images/forest_cliff.jpeg);
+    background-size: 1500px;
+}
+#container #cliffsPhotoSection {
+    background-color: #fff;
+}
+#container #cliffsPhotoUl {
+    text-align: center;
+}
+#container #cliffsPhotoUl .cliffPhoto {
+    display: inline-block;
+}
+#container #cliffsPhotoUl .cliffPhoto label{
+    display: block;
+    background-color: #852B1B;
+    margin: 0px 15px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+#container #cliffsPhotoUl .cliffPhoto img {
+    width: 400px;
+    height: 200px;
+    margin: 0px 15px 30px 15px;
+}
