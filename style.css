@@ -284,7 +284,7 @@ legend {
 #container #cliffsPhotoUl .cliffPhoto {
     display: inline-block;
 }
-#container #cliffsPhotoUl .cliffPhoto label{
+#container #cliffsPhotoUl .cliffPhoto span{
     display: block;
     background-color: #852B1B;
     margin: 0px 15px;
