@@ -71,6 +71,19 @@ p {
     color:#fff;
 }
 
+/* Current Local Time Section */
+#timeofday {
+    text-align: center;
+    line-height: 50px;
+    background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
+}
+#timeofday span:first-child {
+    color: #3a3a3a;
+}
+#clock {
+    color: #125688;
+}
+
 /* Main Section */
 
 /* Partners */
