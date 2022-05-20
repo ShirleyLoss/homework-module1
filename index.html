@@ -137,38 +137,38 @@
             var timeDiff = utchr - hr; //To store time difference between GMT hour and Local hour
             var adjTimeDiff; //To store time difference converted to positive number
             if (timeDiff < 0) {
-                adjTimeDiff = timeDiff + 24;
+                adjTimeDiff = timeDiff + 12;
+            } else if (timeDiff > 11) {
+                adjTimeDiff = timeDiff - 12;
             } else {
                 adjTimeDiff = timeDiff;
             };
             var timeZone; //To store the 4 time zones
-            if (adjTimeDiff == 4) {
-                timeZone = "ET";
-            } else if (adjTimeDiff == 5) {
-                timeZone = "CT";
-            } else if (adjTimeDiff == 6) {
-                timeZone = "MT";
-            } else if (adjTimeDiff == 7) {
-                timeZone = "PT";
-            }
-
-            //Switch case takes longer time.
-            // switch(adjTimeDiss) {
-            //     case '4':
-            //         timeZone = "ET";
-            //         break;
-            //     case '5':
-            //         timeZone = "CT";
-            //         break;
-            //     case '6':
-            //         timeZone = "MT";
-            //         break;
-            //     case '7':
-            //         timeZone = "PT";
-            //         break;
-            //     default:
-            //         timeZone = "Bug!"
+            // if (adjTimeDiff == 4) {
+            //     timeZone = "ET";
+            // } else if (adjTimeDiff == 5) {
+            //     timeZone = "CT";
+            // } else if (adjTimeDiff == 6) {
+            //     timeZone = "MT";
+            // } else if (adjTimeDiff == 7) {
+            //     timeZone = "PT";
             // }
+
+            // Switch case takes longer time.
+            switch(adjTimeDiff) {
+                case '4':
+                    timeZone = "ET";
+                    break;
+                case 5:
+                    timeZone = "CT";
+                    break;
+                case 6:
+                    timeZone = "MT";
+                    break;
+                case 7:
+                    timeZone = "PT";
+                    break;
+            }
 
             //Assemble time format to display
             var time = hr +  ":"  + min + ":" +  sec + " " +  ampm+ " " + timeZone;
