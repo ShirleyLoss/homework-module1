@@ -55,6 +55,7 @@
 
         <!-- End of main Content Area -->
 
+        <!-- Image Area -->
         <section>
             <ul id="partners">
                 <!-- <li class="partner">
@@ -192,6 +193,13 @@
         var closeList = "</li>"; //Declare a variable to contain close list tag
         var image; //Declare an empty variable to store the assembled image list codes
         var imageList = []; //Declare an empty array to store html list that contain an image
+        for (i =  0; i<6; i++){
+            photos.push("<img src='images/partners/partner-" + fileNames[i] + ".png' alt='" + altNames[i] + "'>");
+            image = openList + photos[i] + closeList;
+            imageList.push(image);
+        }
+
+        document.getDocumentByID("partners").innerText = imageList;
 
     </script>
 
