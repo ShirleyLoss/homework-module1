@@ -11,3 +11,15 @@ function generateCode(){
     }
     return code; //return the final accumulated string when loop ends
 }
+
+//Get HTML element to display
+document.getElementById("codes").innerHTML = generateCode();
+
+//Disable Button
+function disableButton(){
+    document.getElementById("submit").disabled = true;
+}
+
+//Activate function
+disableButton();
+

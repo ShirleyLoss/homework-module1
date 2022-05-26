@@ -225,6 +225,7 @@ legend {
     color: #4977D1;
     font-weight: bold;
 }
+
 #contact #container h1 {
     color: #9ed034;
 }
@@ -271,13 +272,33 @@ legend {
     width: 500px;
     height: 150px;
 }
-.button input{
-    width: 100px;
-    height: 30px;
-    background-color: #4977D1;
-    color: #fff;
-    margin-left: 400px;
+.randomcode input{
+    font-size: 16px;
+}
+
+form .button input{
+    width: 8em;
+    height: 2.5em;
+    font-size: 1.2em;
     font-weight: bold;
+    /* background-color: #4977D1; */
+    color: #fff;
+    border: none;
+    margin-left: 352px;
+
+}
+
+.randomcode {
+    margin-left: 220px;
+}
+
+#codes {
+    background-color:lightgrey;
+    width: 6em;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    margin-left: 10px;
 }
 
 /* Cliffs Area */
