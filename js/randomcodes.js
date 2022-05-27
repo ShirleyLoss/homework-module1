@@ -10,7 +10,7 @@ var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$'
 // Function to generate combination of characters
 function generateCode(){
     // Create variables to store generated codes and the type of characters we want to show as codes
-    
+
     //Generate character nultiple times using a loop
     for (i = 1; i<=8; i++) {
         var char = Math.random()*str.length; //random select a character
@@ -22,9 +22,18 @@ function generateCode(){
 //Get HTML element to display
 document.getElementById("codes").innerHTML = generateCode();
 
-//Disable Button
+//determine when to able or disable button
 function disableButton(){
-    document.getElementById("submit").disabled = true;
+    document.getElementById("submit").disabled = btnvalue; // able or disable button
+    if (btnvalue == true) { //test if button is disabled or enabled
+        //set button and label color translucent
+        document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 0.3)";
+        document.getElementById("submit").style.color = "rgba(255, 255, 255, 0.5)";
+    } else {
+        //set button and label with no transparency
+        document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 1)";
+        document.getElementById("submit").style.color = "rgba(255, 255, 255, 1)";
+    }
 }
 
 //Activate function
