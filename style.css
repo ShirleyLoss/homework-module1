@@ -202,6 +202,11 @@ td:first-child {
     font-weight: bold;
     background: #BDE1FF;
 }
+.activitiesTableSelected {
+    background-color: greenyellow;
+    font-weight: bold;
+    color: white;
+}
 
 /* Contact Page */
 #contact{
