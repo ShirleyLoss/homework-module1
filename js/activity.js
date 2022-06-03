@@ -6,10 +6,6 @@ $(document).ready(function(){
         $(this).css('cursor', 'pointer');
     })
     $(".available").click(function(){
-        if($(this).hasClass("activitiesTableSelected")){
-            $(this).removeClass("activitiesTableSelected");
-        } else {
-            $(this).addClass("activitiesTableSelected");
-        }
+        $(this).toggleClass("activitiesTableSelected");
     });
 });
