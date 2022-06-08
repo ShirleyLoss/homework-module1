@@ -7,7 +7,6 @@ $(document).ready(function(){
     })
     $(".available").click(function(){
         var index = $(this).index()+1;
-        console.log(index);
         $(this).toggleClass("activitiesTableSelected");
         if($(this).hasClass("activitiesTableSelected")) {
             $("#displaySelected").css('visibility', 'visible'); //make display box visible
