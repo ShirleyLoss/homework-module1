@@ -44,6 +44,7 @@ p {
 .main-menu {
     margin-left: 227px;
     font-weight: 400;
+    margin-top: 0px;
 }
 .main-menu ul li {
     list-style-type: none;
@@ -67,7 +68,7 @@ p {
     background: #9ed034;
     border: None;
 }
-.main-menu ul li.active a{
+.main-menu ul li.active a {
     color:#fff;
 }
 
@@ -85,29 +86,90 @@ p {
 }
 
 /* Main Section */
+#homeMainH1 {
+    text-align: center;
+}
+
+.homeMainP div {
+    border: 1px solid rgb(150, 150, 150);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.homeMainP h2 {
+    margin: 15px;
+    text-align: center;
+}
+
+.homeMainP p {
+    margin: 15px;
+}
+
+.homeMainP {
+    display: grid;
+}
+
+.homeMainP1 {
+    grid-area: homeMainP1;
+}
+.homeMainP2 {
+    grid-area: homeMainP2;
+}
 
 /* Partners */
 section {
     width: 100%;
     background-color: #4288C3;
 }
-section #partners {
-    width: 1200px;
+section .partners {
+    /* width: 1200px; */
     padding: 2em 0 2em 0;
-    margin: 50px auto 0;
+    /* margin: 50px auto 0; */
+    margin: 2em auto 0;
     text-align: center;
 }
-section #partners .partner {
+section .partners .partner {
     display: inline-block;
-    margin: 0 0.75em;
-    padding: 1.3em 1.5em;
+    margin: 1em 1em;
+    /* padding: 1.3em 1.5em; */
+    padding: 2.5em;
     background-color: #fff;
     border-radius: 50%;
 }
-section #partners .partner img {
-    width: 90px;
-    height: 90px;
+section .partners .partner img {
+    /* width: 100px;
+    height: 100px; */
+    width: 100%;
+    height: 100%;
 }
+/* .col-lg-1-half {
+    -ms-flex:0 0 12.5%;
+    flex:0 0 12.5%;
+    max-width: 12.5%;
+} */
+/* Partner for grid */
+/* .partners{
+    display: grid;
+}
+.partner1 {
+    grid-area: partner1;
+}
+.partner2 {
+    grid-area: partner2;
+}
+.partner3 {
+    grid-area: partner3;
+}
+.partner4 {
+    grid-area: partner4;
+}
+.partner5 {
+    grid-area: partner5;
+}
+.partner6 {
+    grid-area: partner6;
+} */
+
 
 /* Footer */
 footer {
@@ -134,12 +196,12 @@ footer #disclaimer p {
     text-align: center;
 }
 footer #nondisclaimer .social .fa {
-    padding: 15px;
+    padding: 1em;
     font-size: 15px;
-    width: 15px;
+    width: 3em;
     text-align: center;
     text-decoration: None;
-    margin: 0 4px;
+    margin: 0 0.25em;
     border-radius: 50%;
 }
 footer #nondisclaimer .social .fa:hover {
@@ -157,6 +219,108 @@ footer #nondisclaimer .social .fa-instagram{
     background: #125688;
     color: white;
 }
+/* MEDIA QUERIES */
+
+ /* Small devices (portrait tablets and phones, upto 600px) */
+ @media only screen and (max-width: 600px) {
+    .homeMainP {
+        /* grid-template-columns: 1fr 0.03fr 1fr; */
+        grid-template-areas:
+        'homeMainP1'
+        '.'
+        'homeMainP2';
+    }
+    section .partners .partner {
+        padding: 2.5em;
+    }
+}
+
+ /* Small devices (portrait tablets and phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .homeMainP {
+        /* grid-template-columns: 1fr 0.03fr 1fr; */
+        grid-template-areas:
+        'homeMainP1'
+        '.'
+        'homeMainP2';
+    }
+}
+
+ /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .homeMainP {
+        grid-template-columns: 0.3fr 1fr 0.03fr 1fr 0.3fr ;
+        /* grid-template-rows: 200px 5px 200px; */
+        grid-template-areas:
+        '. homeMainP1 . homeMainP2. ';
+    }
+    section .partners .partner {
+        padding: 2em;
+    }
+}
+ /* Medium devices (landscape tablets, upto 768px) */
+@media only screen and (max-width: 768px) {
+    footer #nondisclaimer .copy {
+        padding: 3.5em 0em 3.5em 0em;
+        text-align: center;
+        float: none;
+        font-size: 0.9em;
+    }
+}
+ /* Large devices (laptops/desktops, upto 992px) */
+@media only screen and (min-width: 992px) {
+    .main-menu {
+        margin-left: 227px;
+        font-weight: 400;
+        margin-top: 0px;
+    }
+    .main-menu ul li {
+        list-style-type: none;
+        /* display: inline-block; */
+        float: left;
+        padding-left: 1em;
+        padding-right: 1em;
+        border: 1px solid rgba(202, 204, 202, 0.6);
+        line-height: 20px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    .main-menu ul li a {
+        text-decoration: None;
+        color: #888;
+    }
+    .main-menu ul li a:hover {
+        color: #9ed034;
+    }
+    .main-menu ul li.active {
+        background: #fff;
+        border: None;
+    }
+    .main-menu ul li.active a {
+        color:#fff;
+    }
+}
+
+ /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .main-menu {
+        margin-left: 100px;
+        margin-top: -8px;
+    }
+    .main-menu ul li {
+        padding-left: 1.2em;
+        padding-right: 1.3em;
+        line-height: 84px;
+        text-transform: uppercase;
+    }
+    .main-menu ul li a:hover {
+        color: #9ed034;
+    }
+    .main-menu ul li.active a{
+        color:#fff;
+    }
+}
+
 
 /* Activities Page */
 #activities {
