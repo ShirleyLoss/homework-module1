@@ -28,7 +28,7 @@ p {
 }
 .main-header {
     background-color: rgb(255, 255, 255, 0.8);
-    width: 700px;
+    width: 80%;
     margin: 2em auto 0 auto;
     min-height: 100px;
     height: 100px;
@@ -70,6 +70,9 @@ p {
 }
 .main-menu ul li.active a {
     color:#fff;
+}
+.navbar-toggler{
+    vertical-align: middle;
 }
 
 /* Current Local Time Section */
@@ -268,20 +271,15 @@ footer #nondisclaimer .social .fa-instagram{
     }
 }
  /* Large devices (laptops/desktops, upto 992px) */
-@media only screen and (min-width: 992px) {
-    .main-menu {
-        margin-left: 227px;
-        font-weight: 400;
-        margin-top: 0px;
-    }
+@media only screen and (max-width: 991px) {
     .main-menu ul li {
         list-style-type: none;
         /* display: inline-block; */
         float: left;
-        padding-left: 1em;
+        padding-left: 2em;
         padding-right: 1em;
-        border: 1px solid rgba(202, 204, 202, 0.6);
-        line-height: 20px;
+        border-left: 1px solid rgba(202, 204, 202, 0.6);
+        line-height: 40px;
         text-transform: uppercase;
         font-size: 14px;
     }
@@ -292,8 +290,12 @@ footer #nondisclaimer .social .fa-instagram{
     .main-menu ul li a:hover {
         color: #9ed034;
     }
+    .main-menu ul li {
+        background: rgb(255, 255, 255, 0.8);
+        border: None;
+    }
     .main-menu ul li.active {
-        background: #fff;
+        background: #9ed034;
         border: None;
     }
     .main-menu ul li.active a {
@@ -302,10 +304,12 @@ footer #nondisclaimer .social .fa-instagram{
 }
 
  /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 991px) {
     .main-menu {
-        margin-left: 100px;
-        margin-top: -8px;
+        position: absolute;
+        right: 0em;
+        top: 0em;
+        /* margin-top: -8px; */
     }
     .main-menu ul li {
         padding-left: 1.2em;
