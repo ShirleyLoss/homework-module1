@@ -3,8 +3,7 @@
 }
 header {
     width: 100%;
-    min-height: 400px;
-    padding-top:3em;
+    min-height: 275px;
 }
 h1 {
     color: #9ed034;
@@ -20,18 +19,22 @@ p {
 }
 /* Index Area */
 #home {
-    margin: 40px;
+    /* margin: 40px; */
+    background: no-repeat white url(images/cliff_ocean.jpg);
+    background-size: 100% 400px;
 }
-#home header {
+/* #home header {
     background: no-repeat lightgrey url(images/cliff_ocean.jpg);
     background-size: 1500px;
-}
+} */
 .main-header {
     background-color: rgb(255, 255, 255, 0.8);
     width: 80%;
-    margin: 2em auto 0 auto;
+    /* margin: 2em auto 0 auto; */
+    margin: 0 auto 0 auto;
     min-height: 100px;
     height: 100px;
+    top: 100px;
 }
 .main-header .logo img{
     width: 100px;
@@ -42,9 +45,13 @@ p {
 
 /* Navigation */
 .main-menu {
-    margin-left: 227px;
+    /* margin-left: 227px; */
     font-weight: 400;
     margin-top: 0px;
+    position: absolute;
+    top: 47px;
+    right: 175px
+
 }
 .main-menu ul li {
     list-style-type: none;
@@ -291,7 +298,8 @@ footer #nondisclaimer .social .fa-instagram{
         color: #9ed034;
     }
     .main-menu ul li {
-        background: rgb(255, 255, 255, 0.8);
+        /* background: rgb(255, 255, 255, 0.8); */
+        background-color: rgba(38, 41, 61, 0.7);
         border: None;
     }
     .main-menu ul li.active {
@@ -300,6 +308,12 @@ footer #nondisclaimer .social .fa-instagram{
     }
     .main-menu ul li.active a {
         color:#fff;
+    }
+    .nav-item {
+        width: 10em;
+        position: relative;
+        left: 12.5em;
+        top: 3.75em;
     }
 }
 
@@ -330,21 +344,22 @@ footer #nondisclaimer .social .fa-instagram{
 #activities {
     margin: 40px;
 }
-#activities header {
-    background: no-repeat lightgrey url(images/runfly.jpeg);
-    background-size: 1500px;
+#activities {
+    background: no-repeat white url(images/runfly.jpeg);
+    background-size: 100% 400px;
 }
-table {
+#activitiesTable {
     width: 1000px;
     margin: 4em auto 0 auto;
 }
-caption {
+#activitiesTable caption {
     background-color: #852B1B;
     height: 40px;
     color: #fff;
     font-size: 1.3em;
     font-weight: bold;
     padding-top: 1em;
+    vertical-align: center;
 }
 thead {
     background-color: #BDE1FF;
@@ -408,9 +423,9 @@ td:first-child {
 #contact{
     margin: 40px;
 }
-#contact header {
-    background: no-repeat lightgrey url(images/cliff_rock.jpeg);
-    background-size: 1500px;
+#contact {
+    background: no-repeat white url(images/cliff_rock.jpeg);
+    background-size: 100% 400px;
 }
 #contact .contactinfo {
     margin: auto 100px;
@@ -478,14 +493,25 @@ legend {
 }
 
 form .button input{
+    /* width: 8em;
+    height: 2.5em;
+    font-size: 1.2em;
+    font-weight: bold; */
+    /* background-color: #4977D1; */
+    /* color: #fff;
+    border: none;
+    margin-left: 352px; */
+
+}
+
+form button {
     width: 8em;
     height: 2.5em;
     font-size: 1.2em;
     font-weight: bold;
     /* background-color: #4977D1; */
-    color: #fff;
     border: none;
-    margin-left: 352px;
+    margin-left: 375px;
 
 }
 
@@ -506,9 +532,9 @@ form .button input{
 #cliffs {
     margin: 40px;
 }
-#cliffs header {
-    background: no-repeat lightgrey url(images/forest_cliff.jpeg);
-    background-size: 1500px;
+#cliffs {
+    background: no-repeat white url(images/forest_cliff.jpeg);
+    background-size: 100% 400px;
 }
 #container #cliffsPhotoSection {
     background-color: #fff;

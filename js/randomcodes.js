@@ -27,12 +27,12 @@ function disableButton(btnvalue){
     document.getElementById("submit").disabled = btnvalue; // able or disable button
     if (btnvalue == true) { //test if button is disabled or enabled
         //set button and label color translucent
-        document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 0.3)";
-        document.getElementById("submit").style.color = "rgba(255, 255, 255, 0.5)";
+        // document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 0.3)";
+        // document.getElementById("submit").style.color = "rgba(255, 255, 255, 0.5)";
     } else {
         //set button and label with no transparency
-        document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 1)";
-        document.getElementById("submit").style.color = "rgba(255, 255, 255, 1)";
+        // document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 1)";
+        // document.getElementById("submit").style.color = "rgba(255, 255, 255, 1)";
     }
 }
 
@@ -48,6 +48,8 @@ function evaluateCode(){
     //test if code entered matches the number of generated characters
     if(charset1.length == charset2.length && charset1 == charset2) {
         disableButton(false); //if match, run the function to enable button
+    } else {
+        disableButton(true);
     }
 }
 
