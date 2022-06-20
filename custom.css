@@ -25,6 +25,7 @@ main .h1{
 table {
     width: 1000px;
     margin: 4em auto 0 auto;
+    overflow-x: scroll;
 }
 .activitiesTable caption {
     background-color: #852B1B;
@@ -37,27 +38,35 @@ table {
     caption-side: top;
     text-align: center;
 }
-thead {
+.contactFieldset {
+    border: 1px solid #9ed034;
+    padding: 20px;
+}
+.contactLegend {
+    color: #4977D1;
+    font-weight: bold;
+}
+/* thead {
     background-color: #BDE1FF;
     text-align: center;
 }
 tbody {
     background-color: #EEFFE6;
     text-align: center;
-}
+} */
 .activitiesTable .activitiesTableHead .tr .td {
-    width: 225px;
+    /* width: 225px;
     height: 75px;
-    vertical-align: middle;
+    vertical-align: middle; */
     border: solid 1px #852B1B;
 }
 .activitiesTable .activitiesTableBody .tr .td {
-    width: 225px;
+    /* width: 225px;
     height: 75px;
-    vertical-align: middle;
+    vertical-align: middle; */
     border: solid 1px #852B1B;
 }
-thead tr td:first-child {
+/* thead tr td:first-child {
     width: 125px;
     height: 50px;
     background-color: #4977D1;
@@ -71,4 +80,4 @@ td:first-child {
     background-color: greenyellow;
     font-weight: bold;
     color: white;
-}
+} */

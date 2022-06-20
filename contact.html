@@ -88,54 +88,55 @@
             </div>
 
             <form action="/contact" method="post">  
-            <fieldset>  
-                <legend>Contact Form</legend>
-                <div class="textbox">
-                    <label>Name:</label> 
-                    <input type="text" name="name" placeholder="John Doe">  
-                    <label>Email:</label>  
-                    <input type="email" name="email" placeholder="johndoe@gmail.com"> 
-                    <label>Phone:</label>
-                    <input type="text" name="phone" placeholder="xxx-xxx-xxxx"> 
-                </div>
-                
-                <div class="radios">
-                    <label>How should we contact you?</label>  
-                    <input type="radio" name="contact" value="email" checked>Email 
-                    <input type="radio" name="contact" value="phone">Phone
-                </div>
+                <fieldset class="contactFieldset">  
+                    <legend class="contactLegend">Contact Form</legend>
+                    <div class="formInnerBorder">
+                        <div class="textbox">
+                            <label>Name:</label> 
+                            <input type="text" name="name" placeholder="John Doe">  
+                            <label>Email:</label>  
+                            <input type="email" name="email" placeholder="johndoe@gmail.com"> 
+                            <label>Phone:</label>
+                            <input type="text" name="phone" placeholder="xxx-xxx-xxxx"> 
+                        </div>
+                        
+                        <div class="radios">
+                            <label>How should we contact you?</label>  
+                            <input type="radio" name="contact" value="email" checked>Email 
+                            <input type="radio" name="contact" value="phone">Phone
+                        </div>
+    
+                        <div class="selectmenu">
+                            <label>Which Cliff are you inquiring?</label>  
+                            <select>
+                                <option>West Cliff</option>
+                                <option>North Cliff</option>
+                                <option>East Cliff</option>
+                                <option>South Cliff</option>
+                            </select>
+                        </div>
+                        
+                        <div class="commentbox">
+                            <label>How did you hear about us:</label>  
+                            <textarea></textarea>
+                        </div>
+    
+                        <!-- Random Codes -->
+                        <div class="randomcode">
+                            <input type="text" name="randomcode" placeholder="Enter characters" id="codeentered">
+                            <p id="codes"></p>
+                        </div>
+                        <button class="btn btn-primary" type="submit" id="sendButton" >
+                            <i class="fa fa-send-o"></i> Send
+                        </button>
+                    </div>
 
-                <div class="selectmenu">
-                    <label>Which Cliff are you inquiring?</label>  
-                    <select>
-                        <option>West Cliff</option>
-                        <option>North Cliff</option>
-                        <option>East Cliff</option>
-                        <option>South Cliff</option>
-                    </select>
-                </div>
-                
-                <div class="commentbox">
-                    <label>How did you hear about us:</label>  
-                    <textarea></textarea>
-                </div>
-
-                <!-- Random Codes -->
-                <div class="randomcode">
-                    <input type="text" name="randomcode" placeholder="Enter characters" id="codeentered">
-                    <p id="codes"></p>
-                </div>
-
-                <button class="btn btn-primary" type="submit" id="submit" >
-                    <i class="fa fa-send-o"></i> Send
-                </button>
-
-                <!-- <div class="button"> -->
-                    <!-- <i class="fa fa-send-o"></i> -->
-                    <!-- <input type="submit" id="submit" value="Send"> -->
-                <!-- </div>  -->
-                
-            </fieldset>  
+                    <!-- <div class="button"> -->
+                        <!-- <i class="fa fa-send-o"></i> -->
+                        <!-- <input type="submit" id="submit" value="Send"> -->
+                    <!-- </div>  -->
+                    
+                </fieldset>  
             </form>
             <!-- Form Content Area End -->
 

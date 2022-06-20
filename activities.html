@@ -73,64 +73,87 @@
         <main>
             <h1 class="h1">Activities</h1>
             <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
-            <table class="activitiesTable" id="activitiesTable">
-                <caption class="caption">Activities at the Cliffs</caption>
-                <thead class="activitiesTableHead" id="activitiesTableHead">
-                    <tr class="tr">
-                        <td class="td"><b>Activity</b></td>
-                        <td class="td"><b>West Cliff</b></td>
-                        <td class="td"><b>North Cliff</b></td>
-                        <td class="td"><b>East Cliff</b></td>
-                        <td class="td"><b>South Cliff</b></td>
-                    </tr>
-                </thead>
-                <tbody class="activitiesTableBody" id="activitiesTableBody">
-                    <tr class="tr">
-                        <td class="td">Hiking</td>
-                        <td class="td">College Hikes</td>
-                        <td class="td">Family Fun</td>
-                        <td class="td">Treasure Trails</td>
-                        <td class="td">Canyon Explorer</td>
-                    </tr>
-                    <tr class="tr">
-                        <td class="td">Kayak</td>
-                        <td class="td">Western Kayak Meetup</td>
-                        <td class="td">Not Available</td>
-                        <td class="td">Youth Kayaking</td>
-                        <td class="td">Kayak Down</td>
-                    </tr>
-                    <tr class="tr">
-                        <td class="td">Skydiving</td>
-                        <td class="td">Seacliff Diving</td>
-                        <td class="td">Sky is the limit</td>
-                        <td class="td">Not Available</td>
-                        <td class="td">Sky Diving for Beginners</td>
-                    </tr>
-                    <tr class="tr">
-                        <td class="td">Biking</td>
-                        <td class="td">Bicycle for One</td>
-                        <td class="td">Not Available</td>
-                        <td class="td">Bike Meetup Group</td>
-                        <td class="td">Not Available</td>
-                    </tr>
-                    <tr class="tr">
-                        <td class="td">Camping</td>
-                        <td class="td">Youth Camp</td>
-                        <td class="td">Rent a Tent</td>
-                        <td class="td">Campground Adventure</td>
-                        <td class="td">Sunset Camping</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="activitiesDivTable">
+                <table class="activitiesTable" id="activitiesTable">
+                    <caption class="caption">Activities at the Cliffs</caption>
+                    <thead class="activitiesTableHead" id="activitiesTableHead">
+                        <tr class="tr">
+                            <td class="td"><b>Activity</b></td>
+                            <td class="td"><b>West Cliff</b></td>
+                            <td class="td"><b>North Cliff</b></td>
+                            <td class="td"><b>East Cliff</b></td>
+                            <td class="td"><b>South Cliff</b></td>
+                        </tr>
+                    </thead>
+                    <tbody class="activitiesTableBody" id="activitiesTableBody">
+                        <tr class="tr">
+                            <td class="td">Hiking</td>
+                            <td class="td">College Hikes</td>
+                            <td class="td">Family Fun</td>
+                            <td class="td">Treasure Trails</td>
+                            <td class="td">Canyon Explorer</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">Kayak</td>
+                            <td class="td">Western Kayak Meetup</td>
+                            <td class="td">Not Available</td>
+                            <td class="td">Youth Kayaking</td>
+                            <td class="td">Kayak Down</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">Skydiving</td>
+                            <td class="td">Seacliff Diving</td>
+                            <td class="td">Sky is the limit</td>
+                            <td class="td">Not Available</td>
+                            <td class="td">Sky Diving for Beginners</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">Biking</td>
+                            <td class="td">Bicycle for One</td>
+                            <td class="td">Not Available</td>
+                            <td class="td">Bike Meetup Group</td>
+                            <td class="td">Not Available</td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td">Camping</td>
+                            <td class="td">Youth Camp</td>
+                            <td class="td">Rent a Tent</td>
+                            <td class="td">Campground Adventure</td>
+                            <td class="td">Sunset Camping</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <!-- Selected Info Box Area-->
-            <div id="displaySelected">
-                <div id="result">
+            <!-- <div id="displaySelected">
+                <div id="resultArchived">
                     <h4>My selected activities to enquire:</h4>
                 </div>
                 <div id="sendinfo">
                     <input type="email" placeholder="johndoe@gmail.com">
                     <button>Get Info</button>
+                </div>
+            </div> -->
+            
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal" id="modalButton"></button>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">My selected activities to enquire:</h4>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body" id="result"></div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Back to Activities</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Get Info</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Selected Info Box Area End-->

@@ -19,9 +19,9 @@ p {
 }
 /* Index Area */
 #home {
-    /* margin: 40px; */
+    margin: 40px;
     background: no-repeat white url(images/cliff_ocean.jpg);
-    background-size: 100% 400px;
+    background-size: 100% 415px;
 }
 /* #home header {
     background: no-repeat lightgrey url(images/cliff_ocean.jpg);
@@ -34,7 +34,7 @@ p {
     margin: 0 auto 0 auto;
     min-height: 100px;
     height: 100px;
-    top: 100px;
+    /* top: 100px; */
 }
 .main-header .logo img{
     width: 100px;
@@ -229,6 +229,223 @@ footer #nondisclaimer .social .fa-instagram{
     background: #125688;
     color: white;
 }
+
+/* Activities Page */
+#activities {
+    margin: 40px;
+}
+#activities {
+    background: no-repeat white url(images/runfly.jpeg);
+    background-size: 100% 400px;
+}
+.activitiesDivTable {
+    overflow-y: scroll;
+}
+#activitiesTable {
+    /* width: 1000px; */
+    margin: 4em auto 0 auto;
+}
+#activitiesTable caption {
+    background-color: #852B1B;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+    vertical-align: center;
+}
+thead {
+    background-color: #BDE1FF;
+    text-align: center;
+}
+tbody {
+    background-color: #EEFFE6;
+    text-align: center;
+}
+thead, td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852B1B;
+}
+thead tr td:first-child {
+    width: 125px;
+    height: 50px;
+    background-color: #4977D1;
+    color: #fff;
+}
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
+}
+.activitiesTableSelected {
+    background-color: greenyellow;
+    font-weight: bold;
+    color: white;
+}
+/* Selected Activities Display Info Box */
+#activities main #displaySelected {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid #9ed034;
+    padding: 0.75em;
+}
+#activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
+    display: inline-block;
+    margin: 0;
+}
+#activities main #result {
+    min-height: 50px;
+    width: 90%;
+    padding-left: 20px;
+}
+#activities main #result h4 {
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+#activities main #result p {
+    margin-left: 0;
+}
+#activities main #displaySelected #sendinfo input[type="email"] {
+    width: 200px;
+}
+#modalButton {
+    visibility: hidden;
+}
+/* Activities Page End */
+
+/* Contact Page */
+#contact{
+    margin: 40px;
+}
+#contact {
+    background: no-repeat white url(images/cliff_rock.jpeg);
+    background-size: 100% 400px;
+}
+#contact .contactinfo {
+    margin: auto 100px;
+}
+#contact form {
+    margin: auto 100px;
+}
+/* fieldset {
+    border: 1px solid #9ed034;
+    padding-top: 20px;
+}
+legend {
+    color: #4977D1;
+    font-weight: bold;
+} */
+
+#contact #container h1 {
+    color: #9ed034;
+}
+.phone, .email {
+    margin: 10px auto;
+}
+.phone span:first-child {
+    font-weight: bold;
+}
+.email span:first-child {
+    font-weight: bold;
+}
+.textbox label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.textbox input{
+    display: block;
+    margin-top: 10px;
+    width: 500px;
+}
+.radios {
+    margin: 10px auto;
+}
+.radios label{
+    font-weight: bold;
+}
+.selectmenu {
+    margin: 10px auto;
+}
+.selectmenu label {
+    font-weight: bold;
+}
+.selectmenu select {
+    width: 150px;
+    text-align: center;
+}
+.commentbox label {
+    display: block;
+    font-weight: bold;
+}
+.commentbox textarea {
+    width: 500px;
+    height: 150px;
+}
+.randomcode input{
+    font-size: 16px;
+}
+.randomcode p {
+    margin-top: 10px;
+}
+
+form button {
+    width: 8em;
+    height: 2.5em;
+    /* font-size: 1.5em; */
+    /* font-weight: bold; */
+    /* background-color: #4977D1; */
+    /* border: none; */
+    /* position: relative; */
+    /* display: inline-block; */
+    /* right: 0px; */
+}
+
+#codes {
+    background-color:lightgrey;
+    width: 6em;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+
+/* Cliffs Area */
+#cliffs {
+    margin: 40px;
+}
+#cliffs {
+    background: no-repeat white url(images/forest_cliff.jpeg);
+    background-size: 100% 400px;
+}
+#container #cliffsPhotoSection {
+    background-color: #fff;
+}
+#container #cliffsPhotoUl {
+    text-align: center;
+}
+#container #cliffsPhotoUl .cliffPhoto {
+    display: inline-block;
+}
+#container #cliffsPhotoUl .cliffPhoto span{
+    display: block;
+    background-color: #852B1B;
+    margin: 0px 15px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+#container #cliffsPhotoUl .cliffPhoto img {
+    width: 400px;
+    height: 200px;
+    margin: 0px 15px 30px 15px;
+}
+
 /* MEDIA QUERIES */
 
  /* Small devices (portrait tablets and phones, upto 600px) */
@@ -337,225 +554,69 @@ footer #nondisclaimer .social .fa-instagram{
     .main-menu ul li.active a{
         color:#fff;
     }
+    /* Header background image responsive */
+    header {
+        width: 100%;
+        min-height: 475px;
+    }
+    #home {
+        background-size: 100% 615px;
+    }
+    #cliffs {
+        background-size: 100% 600px;
+    }
+    #activities {
+        background-size: 100% 600px;
+    }
+    #contact {
+        background-size: 100% 600px;
+    }
 }
 
-
-/* Activities Page */
-#activities {
-    margin: 40px;
-}
-#activities {
-    background: no-repeat white url(images/runfly.jpeg);
-    background-size: 100% 400px;
-}
-#activitiesTable {
-    width: 1000px;
-    margin: 4em auto 0 auto;
-}
-#activitiesTable caption {
-    background-color: #852B1B;
-    height: 40px;
-    color: #fff;
-    font-size: 1.3em;
-    font-weight: bold;
-    padding-top: 1em;
-    vertical-align: center;
-}
-thead {
-    background-color: #BDE1FF;
-    text-align: center;
-}
-tbody {
-    background-color: #EEFFE6;
-    text-align: center;
-}
-thead, td {
-    width: 225px;
-    height: 75px;
-    vertical-align: middle;
-    border: solid 1px #852B1B;
-}
-thead tr td:first-child {
-    width: 125px;
-    height: 50px;
-    background-color: #4977D1;
-    color: #fff;
-}
-td:first-child {
-    font-weight: bold;
-    background: #BDE1FF;
-}
-.activitiesTableSelected {
-    background-color: greenyellow;
-    font-weight: bold;
-    color: white;
-}
-/* Selected Activities Display Info Box */
-#activities main #displaySelected {
-    visibility: hidden;
-    margin: 0 auto;
-    width: 600px;
-    border: 2px solid #9ed034;
-    padding: 0.75em;
-}
-#activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
-    display: inline-block;
-    margin: 0;
-}
-#activities main #result {
-    min-height: 50px;
-    width: 300px;
-    padding: 0;
-}
-#activities main #result h4 {
-    margin-bottom: 1em;
-    font-size: 1.15em;
-}
-#activities main #result p {
-    margin-left: 0;
-}
-#activities main #displaySelected #sendinfo input[type="email"] {
-    width: 200px;
-}
-/* Activities Page End */
-
-/* Contact Page */
-#contact{
-    margin: 40px;
-}
-#contact {
-    background: no-repeat white url(images/cliff_rock.jpeg);
-    background-size: 100% 400px;
-}
-#contact .contactinfo {
-    margin: auto 100px;
-}
-#contact form {
-    margin: auto 100px;
-}
-fieldset {
-    border: 1px solid #9ed034;
-    padding-top: 20px;
-}
-legend {
-    color: #4977D1;
-    font-weight: bold;
+@media only screen and (max-width: 550px) {
+    .contactFieldset {
+        width: 270px;
+    }
+    form {
+        overflow-y: scroll;
+    }
 }
 
-#contact #container h1 {
-    color: #9ed034;
-}
-.phone, .email {
-    margin: 10px auto;
-}
-.phone span:first-child {
-    font-weight: bold;
-}
-.email span:first-child {
-    font-weight: bold;
-}
-.textbox label{
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-.textbox input{
-    display: block;
-    margin-top: 10px;
-    width: 500px;
-}
-.radios {
-    margin: 10px auto;
-}
-.radios label{
-    font-weight: bold;
-}
-.selectmenu {
-    margin: 10px auto;
-}
-.selectmenu label {
-    font-weight: bold;
-}
-.selectmenu select {
-    width: 150px;
-    text-align: center;
-}
-.commentbox label {
-    display: block;
-    font-weight: bold;
-}
-.commentbox textarea {
-    width: 500px;
-    height: 150px;
-}
-.randomcode input{
-    font-size: 16px;
+@media only screen and (max-width: 841px) {
+    .formInnerBorder {
+        margin-right: 0px;
+    }
+    .textbox input{
+        width: 96%;
+    }
+    .commentbox textarea {
+        width: 96%;
+        height: 200px;
+    }
+    .randomcode input{
+        font-size: 16px;
+        display: block;
+        margin-left: calc(96% - 175px);
+    }
+    #codes {
+        margin-top: 10px;
+        display: block;
+        margin-left: calc(96% - 96px);
+    }
+    form button {
+        margin-left: calc(96% - 128px);
+    }
 }
 
-form .button input{
-    /* width: 8em;
-    height: 2.5em;
-    font-size: 1.2em;
-    font-weight: bold; */
-    /* background-color: #4977D1; */
-    /* color: #fff;
-    border: none;
-    margin-left: 352px; */
-
-}
-
-form button {
-    width: 8em;
-    height: 2.5em;
-    font-size: 1.2em;
-    font-weight: bold;
-    /* background-color: #4977D1; */
-    border: none;
-    margin-left: 375px;
-
-}
-
-.randomcode {
-    margin-left: 220px;
-}
-
-#codes {
-    background-color:lightgrey;
-    width: 6em;
-    text-align: center;
-    line-height: 40px;
-    display: inline-block;
-    margin-left: 10px;
-}
-
-/* Cliffs Area */
-#cliffs {
-    margin: 40px;
-}
-#cliffs {
-    background: no-repeat white url(images/forest_cliff.jpeg);
-    background-size: 100% 400px;
-}
-#container #cliffsPhotoSection {
-    background-color: #fff;
-}
-#container #cliffsPhotoUl {
-    text-align: center;
-}
-#container #cliffsPhotoUl .cliffPhoto {
-    display: inline-block;
-}
-#container #cliffsPhotoUl .cliffPhoto span{
-    display: block;
-    background-color: #852B1B;
-    margin: 0px 15px;
-    line-height: 40px;
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-}
-#container #cliffsPhotoUl .cliffPhoto img {
-    width: 400px;
-    height: 200px;
-    margin: 0px 15px 30px 15px;
+@media only screen and (min-width: 842px) {
+    .formInnerBorder {
+        width: 520px;
+        margin-right: 0px;
+    }
+    .randomcode {
+        margin-left: 215px;
+    }
+    form button {
+        margin-left: 373px;
+    }
 }
